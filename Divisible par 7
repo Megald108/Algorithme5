@@ -1,0 +1,26 @@
+VARIABLES
+    nombre EST_DU_TYPE NOMBRE
+    reste EST_DU_TYPE NOMBRE
+
+DEBUT_ALGORITHME
+    // Saisie du nombre
+    AFFICHER "Entrez un nombre entier : "
+    LIRE nombre
+
+    // Calcul du reste de la division par 7
+    reste PREND_LA_VALEUR nombre % 7
+
+    // Structure conditionnelle
+    SI (reste == 0) ALORS
+        DEBUT_SI
+            AFFICHER nombre
+            AFFICHER " est divisible par 7."
+        FIN_SI
+    SINON
+        DEBUT_SINON
+            AFFICHER nombre
+            AFFICHER " n'est pas divisible par 7."
+            AFFICHER " Le reste de la division est : "
+            AFFICHER reste
+        FIN_SINON
+FIN_ALGORITHME
